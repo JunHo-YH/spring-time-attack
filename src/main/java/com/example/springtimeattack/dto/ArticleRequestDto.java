@@ -1,9 +1,8 @@
 package com.example.springtimeattack.dto;
 
 import lombok.Getter;
-import lombok.Setter;
 
-@Getter @Setter
+@Getter
 public class ArticleRequestDto {
     private String title;
     private String content;
