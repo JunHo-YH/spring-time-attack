@@ -41,7 +41,7 @@ public class ArticleService {
     // 게시글에 댓글 등록
     public void setArticleComment(ArticleCommentRequestDto articleCommentRequestDto) {
         Article article = articleRepository.findById(articleCommentRequestDto.getIdx()).orElseThrow(
-                () -> new NullPointerException("해다 아이디가 존재하지 않습니다.")
+                () -> new NullPointerException("해당 아이디가 존재하지 않습니다.")
         );
 
         Comment comment = new Comment(articleCommentRequestDto, article);

@@ -15,20 +15,20 @@ public class ArticleController {
 
     private final ArticleService articleService;
 
-    // 조회
-    @GetMapping("/articles")
-    public List<Article> getArticles() {
-        return articleService.getArticles();
-    }
-
     // 게시글 생성
     @PostMapping("/article")
     public Article setArticle(@RequestBody ArticleRequestDto articleRequestDto) {
         return articleService.setArticle(articleRequestDto);
     }
 
+    // 조회
+    @GetMapping("/articles")
+    public List<Article> getArticles() {
+        return articleService.getArticles();
+    }
+
     // 특정 게시글 조회
-    @GetMapping("/article/{id})")
+    @GetMapping("/article/{id}")
     public Article getArticle(@PathVariable Long id) {
         return articleService.getArticle(id);
     }

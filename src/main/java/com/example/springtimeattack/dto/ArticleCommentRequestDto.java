@@ -4,7 +4,7 @@ import lombok.Getter;
 
 @Getter
 public class ArticleCommentRequestDto {
-    private Long idx; // -> 정말 필요한가?
+    private Long idx; // 게시글 idx
     private String comment;
 
 }

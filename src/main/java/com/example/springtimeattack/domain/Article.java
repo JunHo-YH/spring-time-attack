@@ -1,11 +1,13 @@
 package com.example.springtimeattack.domain;
 
 import com.example.springtimeattack.dto.ArticleRequestDto;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
 
+@Getter
 @Entity
 @NoArgsConstructor
 public class Article extends Timestamped{
